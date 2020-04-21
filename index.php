@@ -1,0 +1,369 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+    <//?php define("TITLE","first_php ") ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> /*echo TITLE;?></title>
+</head>
+<body>   /* $user="Mrinal Khemka";
+    $age=18;
+    echo$user."<br>";
+    echo $age."<br>";
+    $user=array("Mrinal Khemka",18,"male");
+    //simple array
+    echo$user[0]."<br>";
+    echo$user[1]."<br>";
+    echo$user[2]."<br>";
+    //associative array
+    $user1=array("name" => "Mrinal Khemka",
+                     "age" => 18,
+                     "sex"=> "male");
+    echo$user1["name"]."<br>";
+    echo$user1["age"]."<br>";
+    echo$user1["sex"]."<br>";
+    if($user1["name"]!=$user[0])
+     echo false;
+     else
+     echo true;
+
+    ?>
+</body>
+</html>-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="icon" href="logo.png">
+    <title>Apple</title>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        .sidebar{
+        position: fixed;
+        background:linear-gradient(rgba(3, 3, 3, 0.6), rgba(0, 0, 0, 1));
+        padding: 0%;
+        margin: 0%;
+        height: 100%;
+        width: 280px;
+        transition: all 0.5s;
+        z-index: 4;
+        left: -280px;
+
+      }
+      .sidebar ul li{
+        margin: 0%;
+        display: block;
+        list-style-type: none;
+        padding-bottom: 30px;
+        text-align: center;
+        
+      }
+      .sidebar ul  li a{
+        color: gray;
+      }
+      .sidebar ul  li a:hover{
+        color: #fff;
+      }
+      .navbar-toggler-icon{
+         z-index :5;
+           
+      }
+      .se{
+        
+      height: 500px;
+      }
+      @media screen and (max-width:767px) {
+        .brand{
+           text-align: center;
+           position: fixed;
+           left: 50%;
+           top: 20px
+
+        }
+        .fa-shopping-bag{
+         display: inline-block;
+
+        }
+        .se{
+             height: 800px;
+        }
+        .j{
+          height: 400px;
+        }
+        
+      }
+      .jumbotron{
+     
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0%;
+      /* background-attachment: fixed;*/
+            }
+            .jum{
+              background-image: url("https://www.apple.com/v/home/ep/images/heroes/iphone-11-pro/hero__dvsxv8smkkgi_mediumtall.jpg");
+              background-color: black;
+              
+            }
+            .jum-1{
+        background-image: url("https://www.apple.com/v/home/ep/images/heroes/iphone-11/hero__dvsxv8smkkgi_mediumtall_2x.jpg");
+        background-color: white;
+        background-attachment: fixed;
+
+            }
+            .jum-2{
+        background-image: url("https://www.apple.com/v/home/ep/images/heroes/watch-series-5/hero__dvsxv8smkkgi_mediumtall_2x.jpg");
+        background-color: white;
+
+            }
+
+      </style>
+      <!-- Custom styles for this template -->
+      <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header  py-1 navbar-expand-md   navbar-dark sticky-top">
+        <div class= "container d-flex flex-column flex-md-row justify-content-between">
+         <!---   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          </a>--->
+          <!--<a class="ac-gn-link ac-gn-link-apple" href="/" data-analytics-title="apple home" id="ac-gn-firstfocus">
+            <span class="ac-gn-link-text">Apple</span>-->
+            <a>
+              <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon" style="text-align: left"></span>
+              </button>
+              
+            </a>
+            <a class="py-2" href="#">
+           <div class="brand"><i class="fab fa-apple" style="font-size: 25px;"></i></div>
+        </a>
+      
+          <a class="py-2 d-none d-md-inline-block " href="#">Mac</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">iPad</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">iPhone</a>
+          <a class="py-2 d-none d-md-inline-block " href="#">Watch</a>
+          <a class="py-2 d-none d-md-inline-block " href="#">TV</a>
+          <a class="py-2 d-none d-md-inline-block " href="#">Music</a>
+          <a class="py-2 d-none d-md-inline-block " href="#">Support</a>
+          <a class="py-2 d-none d-md-inline-block " href="#"><i class="fas fa-search"></i></a>
+          <a class="py-2 d-none d-md-inline-block " href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a class="py-2 d-none d-md-inline-block" href="#"><i class="fas fa-shopping-bag" style="display: none;"></i></a>
+      </div>
+
+
+      </nav>
+      <div class="sidebar">
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://getbootstrap.com/"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Documentation</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link" href="#">Examples</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="#">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="#">Expo</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="#">Blog</a>
+                            </li>
+                         
+        </ul>
+        </div>
+
+      <div class="position-relative text-center jumbotron bg-dark jum " style="height: 570px;">
+        <div class="col-md-7 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-bold" style="color: whitesmoke" >iPhone 11 Pro</h1>
+         <p class="lead font-weight-normal" style="font-size: 25px;color: whitesmoke;line-height: 100%;">Pro cameras  Pro Looks Pro Processor</p>
+     <p>    <a class="font-weight-normal"  href="#" style="font-size: 20px;">Learn more &raquo; </a><a class="font-weight-normal"  href="#" style="font-size: 20px;">See more &raquo;</a></p>
+          <a class="btn btn-outline-light" href="#">Coming soon</a>
+        </div>
+ <!---     <div class="product-device shadow-sm d-none d-lg-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-lg-block"></div>-->
+ </div>
+ <div class="position-relative text-center jumbotron bg-dark jum-1" style="height: 570px;">
+  <div class="col-md-7 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-bold" style="color: rgb(22, 22, 22)" >iPhone 11 </h1>
+   <p class="lead font-weight-normal" style="font-size: 25px;color: rgb(22, 22, 22)"> Just the right amount of everything <i class="far fa-grin-wink"></i>.</p>
+<p>    <a class="font-weight-normal"  href="#" style="font-size: 20px;">Learn more &raquo; </a><a class="font-weight-normal"  href="#" style="font-size: 20px;">See more &raquo;</a></p>
+    <a class="btn btn-outline-dark" href="#">Coming soon</a>
+  </div>
+</div>
+<div class="position-relative text-center jumbotron bg-dark jum-2" style="height: 570px;">
+  <div class="col-md-7 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-bold" style="color: rgb(22, 22, 22)" ><i class="fab fa-apple" style="font-size: 50px;position: relative; top: -5px; "></i>WATCH</h1>
+      <small class="font-weight-bold" style="color: rgb(235, 27, 124);font-size: 22px;letter-spacing: 2px; ">SERIES 5</small>
+   <p class="lead font-weight-normal" style="font-size: 25px;color: rgb(22, 22, 22);line-height:100%;">With the new Always-On Retina display.<br>You've never seen a watch like this.</p>
+<p><a class="font-weight-normal"  href="#" style="font-size: 20px;">Learn more &raquo; </a><a class="font-weight-normal"  href="#" style="font-size: 20px;">See more &raquo;</a></p>
+    <a class="btn btn-outline-dark" href="#">Coming soon</a>
+  </div>
+</div>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 se ">
+        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center j " style="background-image: url('https://www.apple.com/v/home/ep/images/promos/apple-watch-studio/tile__cauwwcyyn9hy_large_2x.jpg');background-position: center;background-size: cover;">
+          <div class="my-3 py-3">
+            <h2 class="display-5" style="color: black;font-size: 42px;letter-spacing: -2px;line-height: 100%;">Apple Watch Studio</h2>
+            <small class="display-5" style="color: black;font-size: 20px;letter-spacing: -1px;line-height: 100%;">Any case.Any band.Any style you want</small>
+            <p class="lead"><a href="#" style="font-size: 18px;">Create your style &rsaquo;</a></p>
+          </div>
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center j " style="background-image: url('https://www.apple.com/v/home/ep/images/promos/tv-plus-tbt/tile__cauwwcyyn9hy_large_2x.jpg');background-position: center;background-size: cover;">
+          <div class="my-3 p-3">
+            <h2 class="display-5" style="color:gray;"><i class="fab fa-apple" style="font-size: 40px;"></i>TV+</h2>
+          <p class="lead" style="font-size: 25px;color: rgba(245, 245, 245, 0.692);font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 4px; position: relative;top: 250px;;">TRUTH BE TOLD</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 se">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white j"  style="background-image: url('https://www.apple.com/v/home/ep/images/promos/macbook-pro/macbook_pro_performance__dpg5ujd89nyq_small_2x.jpg');background-position: center;background-size: cover;">
+          <div class="my-3 p-3">
+            <h2 class="display-5">MacBook Pro</h2>
+            <p class="lead">More power.More performance.More pro</p>
+            <p><a class="font-weight-normal"  href="#" style="font-size: 18px;">Learn more &rsaquo; </a><a class="font-weight-normal"  href="#" style="font-size: 18px;">Buy &rsaquo;</a></p>
+          </div> 
+        </div>
+        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center  overflow-hidden j"  style="background-image: url('https://www.apple.com/v/home/ep/images/promos/apple-card/tile__cauwwcyyn9hy_small_2x.jpg');background-position: center;background-size: cover;">
+          <div class="my-3 py-3">
+            <h2 class="display-5"><i class="fab fa-apple"></i> card is here</h2>
+            <p class="lead" style="line-height: 100%;">Get 3% cash while purchasing <br> from apple by apple card</p>
+            <p><a class="font-weight-normal"  href="#" style="font-size: 18px;">Learn more &rsaquo; </a><a class="font-weight-normal"  href="#" style="font-size: 18px;">Apply now &rsaquo;</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 se">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden j"  style="background-image: url('https://www.apple.com/v/home/ep/images/promos/ipad/tile__cauwwcyyn9hy_small_2x.jpg');background-position: center;background-size: cover;">
+          <div class="my-3 p-3">
+            <small class="display-5" style="font-family: cursive; font: bold; font-size: 15px;">The new</small>
+            <h2 class="display-5">iPad</h2>
+            <p class="lead" style="line-height: 100%;">Like a computer.<br> Unlike any computer.</p>
+            <p><a class="font-weight-normal"  href="#" style="font-size: 18px;">Learn more &rsaquo; </a><a class="font-weight-normal"  href="#" style="font-size: 18px;">Buy &rsaquo;</a></p>
+          </div>
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden j"  style="background-image: url('https://www.apple.com/v/home/ep/images/promos/apple-arcade-avail/tile__cauwwcyyn9hy_small_2x.jpg');background-position: center;background-size: cover;">
+          <div class="my-3 py-3">
+            <h2 class="display-5"><i class="fab fa-apple"></i> Arcade</h2>
+            <p class="lead"  style="line-height: 100%;" >Play extraordinary.<br>Find it on App Store.</p>
+            <p><a class="font-weight-normal"  href="#" style="font-size: 18px;color: white;">Try it for free &raquo; </a><a class="font-weight-normal"  href="#" style="font-size: 18px; color: white;">Learn more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <!----
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+      </div>-->
+      
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <i class="fab fa-apple" style="font-size: 30px;"></i>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Business</a></li>
+              <li><a class="text-muted" href="#">Education</a></li>
+              <li><a class="text-muted" href="#">Government</a></li>
+              <li><a class="text-muted" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer> 
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+            $(function(){
+             var i=0;
+            $('.navbar-toggler').click(function(){
+              if(i%2==0){
+                 $('.sidebar').css({'left':'0px'});
+                // $('body').css({'overflow':'hidden'});
+              }
+              else{
+                $('.sidebar').css({'left':'-280px'});
+               // $('body').css({'overflow':'auto'});
+              }
+              i++;
+              $().on('mouseenter',function(){
+                alert("you are in body")
+               // $('.sidebar').css({'left':'-280px'};
+              });
+            });
+            });
+            
+            </script>
+</body>
+</html>
